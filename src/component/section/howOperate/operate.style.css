@@ -1,0 +1,228 @@
+.section-title.operate-title {
+    padding: 5px 0px 24px;
+}
+.operetion-wrapperbox{
+    position: relative;
+    padding: 58px 0 126px;
+}
+.operate-card {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 26px 49px 20px 46px;
+    min-height: 420px;
+    position: relative;
+}
+.operate-card:not(:last-child){
+    margin-bottom: 58px;
+}
+.operate-card:nth-child(3) .card-content{
+    padding-left: 182px;
+}
+.operate-card:nth-child(4) .card-content{
+    padding-right: 116px;
+}
+.operate-card:nth-child(5) .card-content{
+    padding-left: 182px;
+}
+.card-content.left-to-right{
+    padding-right: 182px;
+}
+.operate-card .card-content {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.operate-card .left-to-right {
+    flex-direction: row-reverse;
+}
+
+.operetion-wrapperbox .operate-card:first-child .image-box {
+    max-width: 509px;
+    width: 100%;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+.card-content .description p {
+	font-family: var(--font-family);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 34px;
+	text-align: center;
+	color: var(--dark-color);
+	max-width: 635px;
+	margin: 0 auto;
+}
+
+.step-number {
+    width: 175px;
+    height: 175px;
+    background-color: var(--dark-color);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-number-default {
+    top: -33px;
+    left: -33px;
+}
+
+.step-number-left-to-right {
+    top: -33px;
+    right: -33px;
+}
+
+.step-number span {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 104px;
+    text-align: center;
+    color: #FFFFFF;
+}
+@media (max-width:1280px) {
+    .card-content.left-to-right {
+        padding-right: 85px;
+    }
+    .operate-card:nth-child(3) .card-content {
+        padding-left: 120px;
+    }
+    .operate-card:nth-child(4) .card-content {
+        padding-right: 28px;
+    }
+    .operate-card:nth-child(5) .card-content {
+        padding-left: 112px;
+    }
+    .step-number-left-to-right {
+        top: 0;
+        right: 0;
+    }
+    .step-number-default {
+        top: 0px;
+        left: 0px;
+    }
+    .step-number span {
+        font-size: 61px;
+    }
+    .step-number {
+        width: 140px;
+        height: 140px;
+    }
+}
+@media (max-width:1199px) {
+    .operetion-wrapperbox .operate-card:first-child .image-box {
+        max-width: 382px;
+    }
+    .card-content .description p {
+        font-size: 25px;
+        max-width: 600px;
+    }
+    .operate-card {
+        padding: 26px 15px 20px 15px;
+    }
+    .step-number-left-to-right {
+        top: 0;
+        right: 0;
+    }
+    .step-number-default {
+        top: 0px;
+        left: 0px;
+    }
+    .step-number span {
+        font-size: 61px;
+    }
+    .step-number {
+        width: 120px;
+        height: 120px;
+    }
+    .operate-card {
+        min-height: 341px;
+    }
+    .card-content .image-box {
+        max-width: 236px;
+    }
+    .card-content .description p {
+        font-size: 27px;
+        max-width: 530px;
+    }
+    .operate-card:nth-child(4) .card-content {
+        padding-right: 75px;
+    }
+    .operate-card:nth-child(5) .card-content {
+        padding-left: 125px;
+    }
+}
+@media (max-width:991px) {
+    .card-content.left-to-right {
+        padding-right: 0px;
+    }
+    .operate-card:nth-child(3) .card-content {
+        padding-left: 0px;
+    }
+    .operate-card:nth-child(4) .card-content {
+        padding-right: 0px;
+    }
+    .operate-card:nth-child(5) .card-content {
+        padding-left: 0px;
+    }
+    .operate-card .card-content {
+        display: block;
+    }
+    .card-content .image-box {
+        max-width: 190px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .operate-card {
+        min-height: 100%;
+    }
+    .card-content .description p {
+        font-size: 19px;
+    }
+    .operetion-wrapperbox {
+        padding: 53px 0 55px;
+    }
+    .step-number span {
+        font-size: 45px;
+    }
+    .step-number-default {
+        top: 0;
+        left: 0;
+    }
+    .step-number-left-to-right {
+        top: 0;
+        right: 0;
+    }
+    .step-number {
+        width: 116px;
+        height: 113px;
+    }
+}
+@media (max-width:767px) {
+
+    .step-number {
+        width: 80px;
+        height: 80px;
+    }
+    .step-number span {
+        font-size: 26px;
+    }
+    .step-number-default {
+        top: 0;
+        left: 0;
+    }
+    .step-number-left-to-right {
+        top: 0;
+        right: 0;
+    }
+    .card-content .image-box {
+        max-width: 121px;
+    }
+}

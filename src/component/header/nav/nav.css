@@ -1,0 +1,129 @@
+.header-navbar {
+    padding: 0px;
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    height: 81px;
+}
+.header-nav-wrapper {
+	height: 81px;
+}
+
+
+nav .nav-container .header-nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-logo-wrapper .nav-logo img {
+    width: 100%;
+}
+.nav-logo-wrapper .hamgur-bar {
+	width: 35px;
+	height: 35px;
+	display: none;
+}
+
+.nav-logo-wrapper .hamgur-bar img {
+    width: 100%;
+}
+
+nav .nav-items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 17px;
+    width: 100%;
+}
+
+nav .nav-items li {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media (min-width:992px) {
+    nav .nav-items li {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    nav .nav-logo {
+        cursor: pointer;
+        width: 327px;
+        padding-bottom: 16px;
+    }
+    nav .nav-items {
+        padding-left: 93px;
+    }
+    .header-nav-wrapper {
+        height: 98px;
+    }
+    nav.header-navbar {
+        height: 98px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+    nav .nav-items {
+        padding-left: 32px;
+    }
+    nav .nav-items li {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+    nav .nav-items {
+        padding-left: 31px;
+    }
+}
+@media (max-width:991px) {
+    .header-nav-wrapper {
+        display: block;
+    }
+    nav .nav-items {
+        display: none;
+        padding-left: 0;
+        width: 100%;
+        top: 80px;
+        position: absolute;
+        padding: 45px 20px 35px;
+        background: #fff;
+        left: 0;
+    }
+    .nav-logo-wrapper {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+    }
+    nav .nav-container .header-nav-wrapper {
+        display: block;
+    }
+
+    .nav-logo-wrapper .hamgur-bar {
+        display: block;
+    }
+    .nav-items.nav-items-active {
+        display: block;
+        z-index: 999;
+    }
+    nav .nav-items li {
+        padding: 7px 0;
+    }
+    nav .nav-logo {
+        width: 265px;
+    }
+}
+@media (max-width:350px) {
+    nav .nav-logo {
+        width: 200px;
+    }
+}

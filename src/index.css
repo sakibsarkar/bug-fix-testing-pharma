@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(0, 185, 242, 0.3);
+  --secondary-color: #00B9F2;
+  --dark-color: #000810;
+  --danger-color: #F20000;
+  --success-color: #00F235;
+  --white-color: #ffff;
+
+  --font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1310px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.justify_between {
+  justify-content: space-between;
+}
+
+.justify_around {
+  justify-content: space-around;
+}
+
+.justify_evenly {
+  justify-content: space-evenly;
+}
+
+
+.section-title {
+  width: 100%;
+  height: auto;
+  background: var(--secondary-color);
+  padding: 16px 0px 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-title .title{
+  font-family: var(--font-family);
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 83.7175px;
+}
+.section-title .sub-title{
+  font-style: normal;
+  font-family: var(--font-family);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 43.2934px;
+  letter-spacing: 0.4em;
+}
+@media (max-width:1280px) {
+  .section-title .title {
+    font-size: 75px;
+  }
+
+}
+@media (max-width:1199px) {
+  .section-title .title {
+    font-size: 65px;
+  }
+  .section-title .sub-title{
+    font-size: 35px;
+    letter-spacing: 0.2em;
+  }
+}
+@media (max-width:991px) {
+  .section-title .title {
+    font-size: 45px;
+  }
+  .section-title .sub-title {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+  }
+
+}
+@media (max-width:767px) {
+  .section-title .title {
+    font-size: 26px;
+  }
+  .section-title .sub-title {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section-title.operate-title {
+    padding: 12px 0px 20px !important;
+  }
+  .section-title {
+    padding: 12px 0px 16px;
+  }
+}
+@media (max-width:350px) {
+  .section-title .title {
+    font-size: 20px;
+  }
+}

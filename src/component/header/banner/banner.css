@@ -1,0 +1,102 @@
+.banner {
+    width: 100%;
+    min-height: 685px;
+    height: 100%;
+    background: url("../../../assets/factory-worker.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 98px;
+}
+.banner:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 220px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner .content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39.3311px;
+    text-align: center;
+    color: var(--white-color);
+    margin: 0 auto;
+    max-width: 959px;
+}
+
+.banner .content .msg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+}
+
+.banner .content .msg-button button {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.9678px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    padding: 10px 0px;
+    max-width: 337.06px;
+    width: 100%;
+}
+@media (max-width:991px) {
+    .banner .content {
+        padding-bottom: 103px;
+    }
+    .banner {
+        min-height: 590px;
+    }
+    .banner .content p {
+        font-size: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner .content .msg-button button {
+	font-size: 18px;
+	line-height: 22px;
+	max-width: 299.06px;
+}
+}
+@media (max-width:767px) {
+    .banner .content p {
+        font-size: 22px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .banner .content .msg-button {
+        display: block;
+        text-align: center;
+    }
+    .banner .content .msg-button button:first-child{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:350px) {
+    .banner .content p {
+        font-size: 20px;
+    }
+    .banner .content .msg-button button {
+        font-size: 15px;
+        max-width: 285px;
+    }
+}

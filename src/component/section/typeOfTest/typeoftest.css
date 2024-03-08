@@ -1,0 +1,111 @@
+.type-of-test {
+    position: relative;
+    overflow: hidden;
+}
+.test-container{
+    padding: 53px 0 99px;
+}
+
+.test-card{
+    width: 750px;
+    padding: 0px 10px;
+}
+.test-card:not(:last-child){
+    margin-bottom: 100px;
+}
+.card-absloute {
+	position: absolute;
+	top: 34%;
+	left: auto;
+	right: 35px;
+}
+.test-card h2 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71.7165px;
+    line-height: 87px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.test-card .img-box {
+    width: 484.06px;
+    height: 484.06px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.test-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+@media (max-width:1280px) {
+    .test-card .img-box {
+        width: 350px;
+        height: 350px;
+    }
+    .test-card h2 {
+        font-size: 64px;
+        line-height: 69px;
+    }
+    .test-card {
+        width: 555px;
+    }
+    .labTest-content-wrapper {
+        padding-bottom: 120px;
+    }
+}
+@media (max-width:1199px) {
+    .test-card .img-box {
+        width: 250px;
+        height: 250px;
+    }
+    .test-card h2 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .card-absloute {
+        left: auto;
+        right: 35px;
+    }
+    .test-card {
+        width: 455px;
+    }
+}
+@media  (max-width:992px) {
+    .test-card h2 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .test-card {
+        width: 389px;
+    }
+    .card-absloute {
+        left: auto;
+        right: 35px;
+    }
+}
+@media  (max-width:767px) {
+    .test-card {
+        width: 140px;
+    }
+    .test-card .img-box {
+        width: 120px;
+        height: 120px;
+    }
+    .card-absloute {
+        left: auto;
+        top: 40%;
+        right: 30px;
+    }
+    .test-card h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .test-container {
+        padding: 39px 0 45px;
+    }
+}

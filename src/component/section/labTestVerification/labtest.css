@@ -1,0 +1,192 @@
+.labTest-content-wrapper {
+    padding-top: 46px;
+    padding-bottom: 150px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.lab-test .container .text-box {
+    background-color: var(--primary-color);
+    margin-bottom: 66px;
+}
+
+.lab-test .container .text-box p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30.7733px;
+    line-height: 38px;
+    text-align: center;
+    color: var(--dark-color);
+    padding: 24px 31px 35px 24px;
+    word-break: break-word;
+}
+
+.lab-test .container .verify-test {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+}
+
+.lab-test .container .verify-test input {
+    width: 50%;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33.2699px;
+    color: var(--dark-color);
+    border: 3.2px solid var(--secondary-color);
+    border-right: none;
+    padding: 9px 5px 9px 20px;
+    height: 63px;
+}
+
+.lab-test .container .verify-test button {
+    width: 50%;
+    background-color: var(--secondary-color);
+    padding: 12px 5px 10px 20px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33.2699px;
+    color: var(--white-color);
+    height: 63px;
+
+}
+
+.lab-notification,
+.lab-emty-field-notification {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: all 3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lab-emty-field-notification {
+    bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    animation: fade 4s ease-in-out;
+}
+
+.lab-emty-field-notification p {
+    background-color: var(--danger-color);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    word-wrap: break-word;
+    color: var(--white-color);
+    padding: 4px 31px;
+    margin: 0 auto;
+}
+
+.lab-notification .lab-notify-icon {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.lab-notification .lab-notify-icon img {
+    width: 100%;
+}
+
+.lab-notification p,
+.lab-notification-error p {
+    background-color: var(--success-color);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    word-wrap: break-word;
+    color: var(--white-color);
+    padding: 4px 31px;
+    margin: 0 auto;
+}
+
+.lab-notification-error p {
+    background-color: var(--danger-color) !important;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .lab-test .container .verify-test button {
+        font-size: 25px;
+    }
+
+    .lab-test .container .verify-test input {
+        font-size: 25px;
+    }
+
+    .lab-notification {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .lab-emty-field-notification {
+        margin-left: 50px;
+        margin-right: 50px;
+        animation: fade 2s ease-in-out;
+    }
+}
+
+@media (max-width:991px) {
+    .labTest-content-wrapper {
+        margin-bottom: 70px;
+    }
+
+    .lab-test .container .verify-test button {
+        font-size: 18px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .lab-test .container .verify-test {
+        display: block;
+        width: 100%;
+    }
+
+    .lab-test .container .verify-test input {
+        font-size: 18px;
+        width: 100%;
+        border-right: 3.2px solid var(--secondary-color);
+        margin-bottom: 30px;
+    }
+
+    .lab-notification {
+        bottom: -50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width:425px) {
+    .lab-notification {
+        bottom: -27px;
+        margin-left: 14px;
+        margin-right: 10px;
+    }
+}
