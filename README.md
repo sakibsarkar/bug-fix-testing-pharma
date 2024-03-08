@@ -1,19 +1,31 @@
-In lab test:
+# Project Issue Resolutions
 
-You have to add find and verify the lab test by the order number. 
-You will get the local lest db folder
-Add and dsiplay the error and success message, now it has been comment in jsx , // component/labTestVerification
+## Functions as React Child
 
-Flow: user first type order number in field then click to verify. check user order number have in db, aslo check field is vaild or not then display the appropriate message
+**Issue:** Spinner component was incorrectly called as {Spinner}.  
+**Solution:** Replace {Spinner} with {<Spinner/>}.
 
+## Navbar
 
+**Issue:** Arrow function missing and empty ID for scroll.  
+**Solution:** Pass ("#class", "#id") as arguments for pageScroll().
 
-In contact form : As its same as you can see the live url. you have to do same interaction with react hook
+## Footer
 
-and display the appropriate message that now displayed in live url. // component/conatct
+**Issue:** Similar issues as Navbar.  
+**Solution:** Pass ("#class", "#id") as arguments for pageScroll().
 
+## Verify Labtest
 
-In navlink in header and footer: You have add same interaction as you can see and do it in live url. But you have to do it manual code. You can't use any third party lib for the scroll to view.
+**Issue:** Validation missing.  
+**Solution:** Added functionality to match order numbers with database numbers and implemented state management for errors and success.
 
+## Contact Form
 
-here is the link: https://darling-tiramisu-f035fa.netlify.app
+**Issue:** Hidden input field with default value lacks onchange event and form validation.  
+**Solution:** Either add an onchange event or replace the value with defaultValue. Reset the form after submission and display success notification.
+
+## Operate Cards
+
+**Issue:** React does not allow srcset.  
+**Solution:** Solve this by camel casing and replacing srcset with srcSet.
